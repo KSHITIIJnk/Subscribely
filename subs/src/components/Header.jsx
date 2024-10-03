@@ -16,7 +16,7 @@ const Header = () => {
           <div className="text-2xl font-bold tracking-tight">Subscribely</div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="hover:text-blue-200 transition duration-300">Home</Link>
             <div className="relative group">
               <button onClick={toggleDropdown} className="flex items-center hover:text-blue-200 transition duration-300">
@@ -32,11 +32,15 @@ const Header = () => {
             </div>
             <Link to="/aboutus" className="hover:text-blue-200 transition duration-300">About Us</Link>
           </nav>
-          
-          {/* Subscribe Button */}
-          <div className="hidden md:block">
-            <Link to="#subscribe" className="bg-white text-blue-600 hover:bg-blue-100 font-semibold py-2 px-4 rounded-full transition duration-300 shadow-md">
-              Subscribe Now
+
+          {/* Total Credits and Manage Subscriptions */}
+          <div className="hidden md:flex items-center space-x-4">
+            <span className="text-white">Total Credits Earned: <strong>0</strong></span>
+            <Link to="/subscriptions" className="bg-white text-blue-600 hover:bg-blue-100 font-semibold py-2 px-4 rounded-full transition duration-300 shadow-md">
+              Manage Your Subscriptions
+            </Link>
+            <Link to="/rewards" className="bg-white text-blue-600 hover:bg-blue-100 font-semibold py-2 px-4 rounded-full transition duration-300 shadow-md">
+              Rewards
             </Link>
           </div>
           
@@ -56,9 +60,11 @@ const Header = () => {
             <Link to="/music" className="block py-2 hover:bg-blue-700">Music</Link>
             <Link to="/transport" className="block py-2 hover:bg-blue-700">Transport</Link>
             <Link to="/aboutus" className="block py-2 hover:bg-blue-700">About Us</Link>
-            <Link to="#subscribe" className="block mt-4 bg-white text-blue-600 font-semibold py-2 px-4 rounded-full text-center">
-              Subscribe Now
-            </Link>
+            <Link to="/subscriptions" className="block py-2 hover:bg-blue-700">Manage Your Subscriptions</Link>
+            <Link to="/rewards" className="block py-2 hover:bg-blue-700">Rewards</Link>
+            <div className="block py-2 text-white">
+              Total Credits Earned: <strong>0</strong>
+            </div>
           </nav>
         )}
       </div>
