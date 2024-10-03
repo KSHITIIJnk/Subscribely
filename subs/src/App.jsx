@@ -7,6 +7,9 @@ import Music from './pages/Music';
 import Transport from './pages/Transport';
 import AboutUs from './pages/Aboutus';
 import Footer from './components/Footer';
+import Subscription from './pages/Subscriptions';
+import Rewards from './pages/Rewards';
+import AllSubs from './pages/AllSubs';
 import './index.css';
 
 const App = () => {
@@ -20,6 +23,9 @@ const App = () => {
           <Route path="/music" element={<Music />} />
           <Route path="/transport" element={<Transport />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/subscriptions" element={<Subscription />} />
+          <Route path="/rewards" element={<Rewards />} />
+          <Route path="/allsubs" element={<AllSubs />} />
         </Routes>
         <Footer />
       </div>
