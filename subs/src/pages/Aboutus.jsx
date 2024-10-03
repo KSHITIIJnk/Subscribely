@@ -10,7 +10,7 @@ const TeamMember = ({ name, role, image }) => (
 );
 
 const ValueCard = ({ icon: Icon, title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+  <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
     <div className="bg-blue-100 p-3 rounded-full mb-4">
       <Icon className="w-8 h-8 text-blue-600" />
     </div>
@@ -26,10 +26,10 @@ const AboutUs = () => {
   ];
 
   const values = [
-    { icon: Users, title: "Customer-Centric", description: "We put our customers first in everything we do." },
-    { icon: Target, title: "Innovation", description: "We constantly strive to improve and innovate our services." },
-    { icon: Award, title: "Quality", description: "We are committed to providing top-quality subscription services." },
-    { icon: Zap, title: "Simplicity", description: "We make managing subscriptions easy and hassle-free." },
+    { icon: Users, title: "Customer-Centric", description: "We prioritize our customers in every aspect of our service." },
+    { icon: Target, title: "Innovation", description: "We continually seek to enhance and innovate our offerings." },
+    { icon: Award, title: "Quality", description: "We are dedicated to delivering superior subscription services." },
+    { icon: Zap, title: "Simplicity", description: "We ensure that managing subscriptions is straightforward and efficient." },
   ];
 
   return (
@@ -39,7 +39,7 @@ const AboutUs = () => {
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4 text-gray-800">About Subscribely</h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            We're on a mission to simplify your digital life by providing the best subscription management platform.
+            Our mission is to simplify your digital life by providing the premier subscription management platform.
           </p>
         </div>
 
@@ -47,16 +47,16 @@ const AboutUs = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">Our Story</h2>
           <p className="text-gray-600 mb-4 max-w-3xl mx-auto text-center">
-            Founded in 2020, Subscribely was born out of a simple idea: to make managing multiple subscriptions easy and efficient. We recognized the growing trend of subscription-based services and the need for a centralized platform to manage them all.
+            Founded in 2020, Subscribely was established to streamline the management of multiple subscriptions. Recognizing the rise of subscription-based services, we created a centralized platform to manage them all effortlessly.
           </p>
           <p className="text-gray-600 mb-4 max-w-3xl mx-auto text-center">
-            Today, we're proud to serve thousands of users, helping them discover, manage, and optimize their subscriptions across various categories including entertainment, productivity, fitness, and more.
+            Today, we proudly serve thousands of users, empowering them to discover, manage, and optimize their subscriptions across various categories, including entertainment, productivity, and wellness.
           </p>
         </div>
 
         {/* Our Values */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Our Values</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <ValueCard key={index} {...value} />
